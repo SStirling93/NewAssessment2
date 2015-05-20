@@ -29,7 +29,7 @@ class Store
         void deleteMovie();
         void findMovie();
         void displayCurrentlyRenting();
-        void manageCustomers();
+        void manageCustomers(int options);
         void addCustomer();
         void deleteCustomer();
         void findCustomer();

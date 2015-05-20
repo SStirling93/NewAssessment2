@@ -15,10 +15,11 @@ class customerCollection
         void printCustomerList(const vector<customer>&);
         void addCustomer(customer person);
         vector<customer> getCustomers();
+        vector<customer> customerArchive;
 
     private:
 
-        vector<customer> customerArchive;
+
         void addCustomers(vector<customer>& newCustomerArchive);
 };
 

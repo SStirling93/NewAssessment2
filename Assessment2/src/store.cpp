@@ -75,7 +75,7 @@ void Store::staffMenu(int options){
                 break;
         case 1: this->manageMovies(0);
                 break;
-        case 2: this->manageCustomers();
+        case 2: this->manageCustomers(0);
                 break;
     } // end switch
 
@@ -134,8 +134,68 @@ void Store::deleteMovie(){
 } // end Store::deleteMovie();
 void Store::findMovie(){} // end Store::findMovie();
 void Store::displayCurrentlyRenting(){} // end Store::displayCurrentlyRenting();
-void Store::manageCustomers(){} // end Store::manageCustomers();
-void Store::addCustomer(){} // end Store::addCustomer();
+void Store::manageCustomers(int options){
+    int option = options;
+
+    cout << endl << "1) Add Customer" << endl;
+    cout << "2) Remove Customer" << endl;
+    cout << "0) Logout" << endl;
+
+    if(option == 0) {   // check if there is an error in the previous option
+        cout << endl << "Please enter an option: ";
+    } else {
+        cout << endl << "Please enter a vaild option: ";
+    } // end if
+
+    while(!(cin >> option)){    // check for wrong input type and loop until its right.
+        cout << endl << "1) Add Customer" << endl;
+        cout << "2) Remove Customer" << endl;
+        cout << "0) Back" << endl;
+        cout << endl << "Please enter a vaild option: ";
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    } // end while
+
+    if(option < 0 || option > 2) {  // check if option is in the right bounds
+        this->staffMenu(option);
+    } // end if
+
+    switch(option){
+        case 0: this->staffMenu(0);
+                break;
+        case 1: this->addCustomer();
+                break;
+        case 2: this->deleteCustomer();
+                break;
+    } // end switch
+} // end Store::manageCustomers();
+void Store::addCustomer(){
+    string  NewFirstName = "",
+            NewLastName = "",
+            NewAddress = "",
+            NewPassword = "";
+    int NewPhoneNumber = 0;
+
+        cout << "Please Enter First Name: ";
+        cin >> NewFirstName;
+
+        cout << "Please Enter Surname: ";
+        cin >> NewLastName;
+        std::cin.ignore();
+
+        cout << "Please Enter Address: ";
+        std::getline(cin, NewAddress);
+
+
+        cout << "Please Enter Phone Number: ";
+        cin >> NewPhoneNumber;
+
+        cout << "Please Enter Password: ";
+        cin >> NewPassword;
+        this->customers.addCustomer(customer(NewFirstName, NewLastName, NewAddress, NewPhoneNumber, NewPassword));
+        this->customers.printCustomerList(customers.customerArchive);
+
+} // end Store::addCustomer();
 void Store::deleteCustomer(){} // end Store::deleteCustomer();
 void Store::findCustomer(){} // end Store::findCustomer();
 void Store::displayCustomer(customer person){} // end Store::displayCustomer(...);
