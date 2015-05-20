@@ -14,6 +14,7 @@ class customerCollection
 
         void printCustomerList(const vector<customer>&);
         void addCustomer(customer person);
+        void removeCustomer(customer person);
         vector<customer> getCustomers();
         vector<customer> customerArchive;
 

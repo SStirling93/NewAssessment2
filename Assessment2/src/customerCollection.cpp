@@ -33,6 +33,11 @@ void customerCollection::addCustomer(customer person) {
     this->customerArchive.push_back(person);
 }
 
+void customerCollection::removeCustomer(customer person) {
+
+}
+
+
 vector<customer> customerCollection::getCustomers(){
     return this->customerArchive;
 } // end customerCollection::getCustomters();
