@@ -1,83 +1,72 @@
 # depslib dependency file v1.0
-6625093 ‰Â
-
-1431360238 source:s:\queensland university of technology\inb371 - data structures and algorithms\assessment2\assessment2\main.cpp
+1432094886 source:c:\users\keeper\documents\github\assessment2\assessment2\main.cpp
 	<iostream>
-	<fstream>
-	<stdio.h>
-	<string.h>
-	<movieCollection.h>
-	<movie.h>
+	<vector>
+	"customerCollection.h"
 
-1431360499 source:s:\queensland university of technology\inb371 - data structures and algorithms\assessment2\assessment2\src\movie.cpp
-	"movie.h"
+1432095086 source:c:\users\keeper\documents\github\assessment2\assessment2\src\customer.cpp
+	"customer.h"
 
-1431360547 s:\queensland university of technology\inb371 - data structures and algorithms\assessment2\assessment2\include\movie.h
+1432095086 c:\users\keeper\documents\github\assessment2\assessment2\include\customer.h
+	<iostream>
 	<string>
 	<vector>
 
-1430219888 source:c:\users\keeper\documents\github\assessment2\assessment2\main.cpp
-	<iostream>
-
-1430220054 source:c:\users\keeper\documents\github\assessment2\assessment2\src\customer.cpp
-	"customer.h"
-
-1430221915 c:\users\keeper\documents\github\assessment2\assessment2\include\customer.h
-	<iostream>
-	<string>
-
-1430220089 source:c:\users\keeper\documents\github\assessment2\assessment2\src\customercollection.cpp
+1432095086 source:c:\users\keeper\documents\github\assessment2\assessment2\src\customercollection.cpp
 	"customerCollection.h"
 
-1430220089 c:\users\keeper\documents\github\assessment2\assessment2\include\customercollection.h
+1432095086 c:\users\keeper\documents\github\assessment2\assessment2\include\customercollection.h
+	"customer.h"
 
-1430220478 source:c:\users\keeper\documents\github\assessment2\assessment2\src\movie.cpp
+1432095086 source:c:\users\keeper\documents\github\assessment2\assessment2\src\movie.cpp
 	"movie.h"
 
-1430221891 c:\users\keeper\documents\github\assessment2\assessment2\include\movie.h
-	<iostream>
+1432095086 c:\users\keeper\documents\github\assessment2\assessment2\include\movie.h
 	<string>
+	<vector>
 
-1430220039 source:c:\users\keeper\documents\github\assessment2\assessment2\src\moviecollection.cpp
+1432095086 source:c:\users\keeper\documents\github\assessment2\assessment2\src\moviecollection.cpp
 	"movieCollection.h"
 
-1430220039 c:\users\keeper\documents\github\assessment2\assessment2\include\moviecollection.h
-
-1430220039 gin/master
-
-1430229179 source:s:\queensland university of technology\inb371 - data structures and algorithms\assessment2\assessment2\src\customer.cpp
-	"customer.h"
-
-1430229179 s:\queensland university of technology\inb371 - data structures and algorithms\assessment2\assessment2\include\customer.h
-	<iostream>
-	<string>
-
-1430229179 source:s:\queensland university of technology\inb371 - data structures and algorithms\assessment2\assessment2\src\customercollection.cpp
-	"customerCollection.h"
-
-1430229179 s:\queensland university of technology\inb371 - data structures and algorithms\assessment2\assessment2\include\customercollection.h
-
-1431359760 source:s:\queensland university of technology\inb371 - data structures and algorithms\assessment2\assessment2\src\moviecollection.cpp
-	"movieCollection.h"
-
-1431350627 s:\queensland university of technology\inb371 - data structures and algorithms\assessment2\assessment2\include\moviecollection.h
+1432095086 c:\users\keeper\documents\github\assessment2\assessment2\include\moviecollection.h
 	<iostream>
 	"movie.h"
 	"treenode.h"
 
-1431342455 source:s:\queensland university of technology\inb371 - data structures and algorithms\assessment2\assessment2\src\treenode.cpp
-	"treenode.h"
+1427908473 source:c:\users\keeper\documents\github\assessment2\assessment2\src\vector.cpp
+	"vector.h"
 
-1431349754 s:\queensland university of technology\inb371 - data structures and algorithms\assessment2\assessment2\include\treenode.h
+1426209784 c:\users\keeper\documents\github\assessment2\assessment2\include\vector.h
+	<iostream>
+
+1432095086 source:c:\users\keeper\documents\github\assessment2\assessment2\src\console.cpp
+	"console.h"
+
+1432095086 c:\users\keeper\documents\github\assessment2\assessment2\include\console.h
+	<windows.h>
+	<string>
+
+1432095086 c:\users\keeper\documents\github\assessment2\assessment2\include\treenode.h
 	<cstddef>
 	"movie.h"
 
-1430737772 s:\queensland university of technology\inb371 - data structures and algorithms\assessment2\assessment2\src\treenode.cpp
-	"treenode.h"
+1432095086 source:c:\users\keeper\documents\github\assessment2\assessment2\src\store.cpp
+	"store.h"
 
-1430229179 source:s:\queensland university of technology\inb371 - data structures and algorithms\assessment2\assessment2\src\vector.cpp
-	"vector.h"
-
-1430229179 s:\queensland university of technology\inb371 - data structures and algorithms\assessment2\assessment2\include\vector.h
+1432095086 c:\users\keeper\documents\github\assessment2\assessment2\include\store.h
 	<iostream>
+	<conio.h>
+	<limits>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"console.h"
+	"movieCollection.h"
+	"movie.h"
+	"customerCollection.h"
+	"customer.h"
+
+1432095086 source:c:\users\keeper\documents\github\assessment2\assessment2\src\treenode.cpp
+	"treenode.h"
 

@@ -20,6 +20,7 @@ void movieCollection::insert(Movie key){
 
     if(this->movies == NULL) {
         this->movies = new TreeNode(key);
+        this->numElements++;
     } else {
         this->insert(movies, key);
     } // end if

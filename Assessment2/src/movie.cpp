@@ -46,7 +46,6 @@ Movie::Movie(const string title, const string starring, const string director, c
  */
 
 Movie::~Movie() {
-    this->starring.clear();
 } // end Movie::~Movie();
 
 

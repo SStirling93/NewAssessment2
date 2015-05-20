@@ -2,6 +2,7 @@
 #define CUSTOMER_H
 #include <iostream>
 #include <string>
+#include <vector>
 
 
 using namespace std;
@@ -10,20 +11,49 @@ class customer
 {
     public:
         customer();
-        virtual ~customer();
+        customer(string FName, string LName, string Address, int Phone, string pin);
+        ~customer();
+
+
+    void rentMovie(string Movie);
+
+    void unrentMovie(string Movie);
+
+    void displayRentedMovies();
+
+    void setUsername();
+
+    void setPassword(string Pin);
+
+    string getFirstName() const;
+
+    string getLastName() const;
+
+    string getAddress() const;
+
+    string getUsername() const;
+
+    string getPassword() const;
+
+    int getPhoneNumber() const;
+
+    bool isStaff();
+
 
 
     private:
-    // Note the customer is only allowed to have one dvd copy.
-    static const int RENTLIMIT = 10;
 
-    string  FName,
-            LName,
+
+    string  FirstName,
+            LastName,
             Address,
+            Username,
+            Password;
 
-            rentingRecord[RENTLIMIT];
+    vector<string> rentingRecord;
 
-    int phone;
+    bool staff;
+    int PhoneNumber;
 
 
 
