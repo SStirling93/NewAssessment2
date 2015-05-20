@@ -33,7 +33,7 @@ class Store
         void addCustomer();
         void deleteCustomer();
         void findCustomer();
-        void displayCustomer(customer person);
+        void displayCustomer();
         void displayCurrentlyRenting(customer person);
         void logout();
         void customerMenu(int options);

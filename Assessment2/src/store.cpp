@@ -200,7 +200,14 @@ void Store::addCustomer(){
         this->customers.printCustomerList(customers.customerArchive);
 
 } // end Store::addCustomer();
-void Store::deleteCustomer(){} // end Store::deleteCustomer();
+void Store::deleteCustomer(){
+    string NewUsername = "";
+    cout << "Remove Customer" << endl;
+    cout << "Please enter customer's Username";
+    cin >> NewUsername;
+
+
+} // end Store::deleteCustomer();
 void Store::findCustomer(){
     string SearchFirstName = "";
     string SearchLastName = "";
@@ -220,8 +227,27 @@ void Store::findCustomer(){
     } // end for loop
 
 
+
 } // end Store::findCustomer();
-void Store::displayCustomer(customer person){} // end Store::displayCustomer(...);
+void Store::displayCustomer(){
+    string SearchFirstName = "";
+    string SearchLastName = "";
+
+    cout << "Find Customer" << endl;
+    cout << "Please Enter First Name: ";
+    cin >> SearchFirstName;
+
+    cout << "Please Enter Last Name: ";
+    cin >> SearchLastName;
+
+    for(vector<customer>::iterator person = this->customers.getCustomers().begin(); person != this->customers.getCustomers().end(); ++person) {
+        if(person->getFirstName() == SearchFirstName && person->getLastName() == SearchLastName){
+            person->DisplayDetails();
+            break;
+        }
+    } // end for loop
+
+} // end Store::displayCustomer(...);
 void Store::displayCurrentlyRenting(customer person){} // end Store::displayCurrentlyRenting(...);
 void Store::logout(){} // end Store::logout();
 

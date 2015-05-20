@@ -27,6 +27,8 @@ class customer
 
     void DisplayPhoneNumber();
 
+    void DisplayDetails();
+
     string getFirstName() const;
 
     string getLastName() const;
