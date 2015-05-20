@@ -25,7 +25,7 @@ class customer
 
     void setPassword(string Pin);
 
-    void DisplayDetails();
+    void DisplayPhoneNumber();
 
     string getFirstName() const;
 

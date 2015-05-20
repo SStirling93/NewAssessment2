@@ -139,6 +139,7 @@ void Store::manageCustomers(int options){
 
     cout << endl << "1) Add Customer" << endl;
     cout << "2) Remove Customer" << endl;
+    cout << "3) Find Customer" << endl;
     cout << "0) Logout" << endl;
 
     if(option == 0) {   // check if there is an error in the previous option
@@ -157,7 +158,7 @@ void Store::manageCustomers(int options){
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
     } // end while
 
-    if(option < 0 || option > 2) {  // check if option is in the right bounds
+    if(option < 0 || option > 3) {  // check if option is in the right bounds
         this->staffMenu(option);
     } // end if
 
@@ -213,7 +214,7 @@ void Store::findCustomer(){
 
     for(vector<customer>::iterator person = this->customers.getCustomers().begin(); person != this->customers.getCustomers().end(); ++person) {
         if(person->getFirstName() == SearchFirstName && person->getLastName() == SearchLastName){
-            person->DisplayDetails();
+            person->DisplayPhoneNumber();
             break;
         }
     } // end for loop

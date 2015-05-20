@@ -52,13 +52,8 @@ void customer::unrentMovie(string Movie) {
 void customer::displayRentedMovies() {
 }
 
-void customer::DisplayDetails() {
-        cout << "Customer Name: " << this->getFirstName() << endl;
-        cout << "Customer Surname: " << this->getLastName() << endl;
-        cout << "Customer Address: " << this->getAddress() << endl;
+void customer::DisplayPhoneNumber() {
         cout << "Customer Phone: " << this->getPhoneNumber() <<endl;
-        cout << "Customer Username: " << this->getUsername() <<endl;
-        cout << "Customer Password: " << this->getPassword() <<endl;
         cout << endl;
 }
 
