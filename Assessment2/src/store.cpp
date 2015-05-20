@@ -150,6 +150,7 @@ void Store::manageCustomers(int options){
     while(!(cin >> option)){    // check for wrong input type and loop until its right.
         cout << endl << "1) Add Customer" << endl;
         cout << "2) Remove Customer" << endl;
+        cout << "3) Find Customer" << endl;
         cout << "0) Back" << endl;
         cout << endl << "Please enter a vaild option: ";
         cin.clear();
@@ -166,6 +167,8 @@ void Store::manageCustomers(int options){
         case 1: this->addCustomer();
                 break;
         case 2: this->deleteCustomer();
+                break;
+        case 3: this->findCustomer();
                 break;
     } // end switch
 } // end Store::manageCustomers();
@@ -197,7 +200,26 @@ void Store::addCustomer(){
 
 } // end Store::addCustomer();
 void Store::deleteCustomer(){} // end Store::deleteCustomer();
-void Store::findCustomer(){} // end Store::findCustomer();
+void Store::findCustomer(){
+    string SearchFirstName = "";
+    string SearchLastName = "";
+
+    cout << "Find Customer" << endl;
+    cout << "Please Enter First Name: ";
+    cin >> SearchFirstName;
+
+    cout << "Please Enter Last Name: ";
+    cin >> SearchLastName;
+
+    for(vector<customer>::iterator person = this->customers.getCustomers().begin(); person != this->customers.getCustomers().end(); ++person) {
+        if(person->getFirstName() == SearchFirstName && person->getLastName() == SearchLastName){
+            person->DisplayDetails();
+            break;
+        }
+    } // end for loop
+
+
+} // end Store::findCustomer();
 void Store::displayCustomer(customer person){} // end Store::displayCustomer(...);
 void Store::displayCurrentlyRenting(customer person){} // end Store::displayCurrentlyRenting(...);
 void Store::logout(){} // end Store::logout();
