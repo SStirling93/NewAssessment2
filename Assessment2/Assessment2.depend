@@ -70,3 +70,69 @@
 1432095086 source:c:\users\keeper\documents\github\assessment2\assessment2\src\treenode.cpp
 	"treenode.h"
 
+1432107337 source:c:\users\keeper\documents\github\newassessment2\assessment2\main.cpp
+	<iostream>
+	<vector>
+	"customerCollection.h"
+	"store.h"
+
+1432095086 c:\users\keeper\documents\github\newassessment2\assessment2\include\customercollection.h
+	"customer.h"
+
+1432095086 c:\users\keeper\documents\github\newassessment2\assessment2\include\customer.h
+	<iostream>
+	<string>
+	<vector>
+
+1432095086 c:\users\keeper\documents\github\newassessment2\assessment2\include\store.h
+	<iostream>
+	<conio.h>
+	<limits>
+	<fstream>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"console.h"
+	"movieCollection.h"
+	"movie.h"
+	"customerCollection.h"
+	"customer.h"
+
+1432095086 c:\users\keeper\documents\github\newassessment2\assessment2\include\console.h
+	<windows.h>
+	<string>
+
+1432095086 c:\users\keeper\documents\github\newassessment2\assessment2\include\moviecollection.h
+	<iostream>
+	"movie.h"
+	"treenode.h"
+
+1432095086 c:\users\keeper\documents\github\newassessment2\assessment2\include\movie.h
+	<string>
+	<vector>
+
+1432095086 c:\users\keeper\documents\github\newassessment2\assessment2\include\treenode.h
+	<cstddef>
+	"movie.h"
+
+1432095086 source:c:\users\keeper\documents\github\newassessment2\assessment2\src\console.cpp
+	"console.h"
+
+1432095086 source:c:\users\keeper\documents\github\newassessment2\assessment2\src\customer.cpp
+	"customer.h"
+
+1432095086 source:c:\users\keeper\documents\github\newassessment2\assessment2\src\customercollection.cpp
+	"customerCollection.h"
+
+1432095086 source:c:\users\keeper\documents\github\newassessment2\assessment2\src\movie.cpp
+	"movie.h"
+
+1432095086 source:c:\users\keeper\documents\github\newassessment2\assessment2\src\moviecollection.cpp
+	"movieCollection.h"
+
+1432095086 source:c:\users\keeper\documents\github\newassessment2\assessment2\src\store.cpp
+	"store.h"
+
+1432095086 source:c:\users\keeper\documents\github\newassessment2\assessment2\src\treenode.cpp
+	"treenode.h"
+
